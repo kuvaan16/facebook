@@ -2,6 +2,7 @@ import 'package:facebook/sami/profile.dart';
 import 'package:facebook/sami/setting.dart';
 import 'package:flutter/material.dart';
 
+import 'husseinZ/group.dart';
 import 'kuvan/Login.dart';
 import 'kuvan/newsfeed.dart';
 import 'kuvan/notfication.dart';
@@ -17,13 +18,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/',
+      initialRoute: '/group',
       routes: {
-        '/': (context) => const LoginPage(),
-        '/newsfeed': (context) => const NewsfeedPage(),
-        '/notfication': (context) => const NotficationPage(),
-        '/setting': (context) => const SettingScreen(),
-        '/profil': (context) => const ProfileScreen(),
+        '/':(context) => const LoginPage(),
+        '/newsfeed':(context) => const NewsfeedPage(),
+        '/notfication':(context) => const NotficationPage(),
+        '/setting':(context) => const SettingScreen(),
       },
     );
   }
