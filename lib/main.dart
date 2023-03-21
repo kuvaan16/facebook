@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/group',
       routes: {
         '/':(context) =>  LoginPage(),
-        '/newsfeed':(context) => const NewsfeedPage(),
+        '/newsfeed':(context) => const HomeScreen(),
         '/notfication':(context) => const NotficationPage(),
         '/group':(context) => const GroupPage(),
       },
