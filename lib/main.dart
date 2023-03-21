@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/':(context) =>  LoginPage(),
-        '/newsfeed':(context) => const NewsfeedPage(),
+        '/newsfeed':(context) => const HomeScreen(),
         '/notfication':(context) => const NotficationPage(),
       },
       
