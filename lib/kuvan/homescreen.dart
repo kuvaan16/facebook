@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+import '../husseinZ/group.dart';
+import '../sami/setting.dart';
 import 'newsfeed.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -96,9 +98,7 @@ class _HomeScreenState extends State<HomeScreen> {
         body: TabBarView(
           children: <Widget>[
             Newsfeed(),
-            Center(
-              child: Text("group"),
-            ),
+            GroupPage(),
             Center(
               child: Text("video"),
             ),
@@ -108,9 +108,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Center(
               child: Text("notfication"),
             ),
-            Center(
-              child: Text("setting"),
-            ),
+            SettingScreen(),
           ],
         ),
       ),
