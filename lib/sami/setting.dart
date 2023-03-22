@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/widgets.dart';
+
 class SettingScreen extends StatelessWidget {
   const SettingScreen({super.key});
 
@@ -13,48 +14,53 @@ class SettingScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             ListTile(
-              leading: Text("Mena",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
+              leading: Text(
+                "Mena",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
-             trailing: CircleAvatar(
-              backgroundColor: Colors.grey[200],
-              child: Icon(Icons.search,color: Colors.black,)),
+              trailing: CircleAvatar(
+                  backgroundColor: Colors.grey[200],
+                  child: Icon(
+                    Icons.search,
+                    color: Colors.black,
+                  )),
             ),
             ListTile(
               leading: CircleAvatar(
                 backgroundImage: AssetImage("assets/1.jpg"),
-                ),
-                title: Text("Tandin Wangchuk \n see your profile",style: TextStyle(
-                  fontWeight: FontWeight.bold
-                  ),),
-                  
+              ),
+              title: Text(
+                "Tandin Wangchuk \n see your profile",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
             ),
             Divider(),
-               ListTile(
+            ListTile(
               leading: CircleAvatar(
                 backgroundImage: AssetImage("assets/cr7.jpg"),
-                ),
-                title: Text("foodboil ",style: TextStyle(
-                  fontWeight: FontWeight.bold
-                  ),),
-                  
+              ),
+              title: Text(
+                "foodboil ",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
             ),
-              ListTile(
+            ListTile(
               leading: CircleAvatar(
                 backgroundImage: AssetImage("assets/br.jpg"),
-                ),
-                title: Text("facebook",style: TextStyle(
-                  fontWeight: FontWeight.bold
-                  ),),
-                  
+              ),
+              title: Text(
+                "facebook",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
             ),
-              ListTile(
+            ListTile(
               leading: CircleAvatar(
                 backgroundImage: AssetImage("assets/MESSI.jpg"),
-                ),
-                title: Text("gool ",style: TextStyle(
-                  fontWeight: FontWeight.bold
-                  ),),
-                  
+              ),
+              title: Text(
+                "gool ",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
             ),
             Divider(),
             Row(
@@ -68,19 +74,20 @@ class SettingScreen extends StatelessWidget {
                     child: Card(
                       elevation: 5,
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                        CircleAvatar(
-                          backgroundImage: AssetImage("assets/F.jpg"),
-                        ),
-                        SizedBox(height: 15,),
-                        Text("update facebook")
-                      ]
-                      ),
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            CircleAvatar(
+                              backgroundImage: AssetImage("assets/F.jpg"),
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Text("update facebook")
+                          ]),
                     ),
                   ),
                 ),
-                 ClipRRect(
+                ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   child: Container(
                     height: 140,
@@ -89,23 +96,25 @@ class SettingScreen extends StatelessWidget {
                     child: Card(
                       elevation: 5,
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                        CircleAvatar(
-                          backgroundImage: AssetImage("assets/W.jpg"),
-                        ),
-                        SizedBox(height: 15,),
-                        Text("update facebook")
-                      ]
-                      ),
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            CircleAvatar(
+                              backgroundImage: AssetImage("assets/W.jpg"),
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Text("update facebook")
+                          ]),
                     ),
                   ),
                 ),
-                
               ],
             ),
-            SizedBox(height: 15,),
-                   Row(
+            SizedBox(
+              height: 15,
+            ),
+            Row(
               children: <Widget>[
                 ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -116,19 +125,20 @@ class SettingScreen extends StatelessWidget {
                     child: Card(
                       elevation: 5,
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                        CircleAvatar(
-                          backgroundImage: AssetImage("assets/1-jpg"),
-                        ),
-                        SizedBox(height: 15,),
-                        Text("update facebook")
-                      ]
-                      ),
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            CircleAvatar(
+                              backgroundImage: AssetImage("assets/1-jpg"),
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Text("update facebook")
+                          ]),
                     ),
                   ),
                 ),
-                 ClipRRect(
+                ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   child: Container(
                     height: 140,
@@ -137,28 +147,31 @@ class SettingScreen extends StatelessWidget {
                     child: Card(
                       elevation: 5,
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                        CircleAvatar(
-                          backgroundImage: AssetImage("assets/1-jpg"),
-                        ),
-                        SizedBox(height: 15,),
-                        Text("update facebook")
-                      ]
-                      ),
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            CircleAvatar(
+                              backgroundImage: AssetImage("assets/1-jpg"),
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Text("update facebook")
+                          ]),
                     ),
                   ),
                 ),
-                
               ],
             ),
-             SizedBox(height: 15,),
-             ListTile(
+            SizedBox(
+              height: 15,
+            ),
+            ListTile(
               leading: Icon(Icons.exit_to_app),
               title: Text("log out"),
-
-             ),
-            SizedBox(height: 200,)
+            ),
+            SizedBox(
+              height: 200,
+            )
           ],
         ),
       ),
