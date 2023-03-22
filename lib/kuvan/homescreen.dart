@@ -1,4 +1,4 @@
-import 'package:community_material_icon/community_material_icon.dart';
+//import 'package:community_material_icon/community_material_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -45,10 +45,10 @@ class _HomeScreenState extends State<HomeScreen> {
               width: 15,
             ),
             CircleAvatar(
-              child: Icon(
-                CommunityMaterialIcons.facebook_messenger,
-                color: Colors.black,
-              ),
+              // child: Icon(
+              //   CommunityMaterialIcons.facebook_messenger,
+              //   color: Colors.black,
+              // ),
               backgroundColor: Colors.grey[300],
               radius: 20,
             ),
@@ -71,19 +71,19 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Tab(
               icon: Icon(
-                Icons.video_library,
+                Icons.ondemand_video_rounded,
                 color: Colors.black,
               ),
             ),
             Tab(
               icon: Icon(
-                Icons.person,
+                Icons.person_outline,
                 color: Colors.black,
               ),
             ),
             Tab(
               icon: Icon(
-                Icons.notifications_active,
+                Icons.notifications_none_rounded,
                 color: Colors.black,
               ),
             ),
