@@ -15,7 +15,7 @@ class SettingScreen extends StatelessWidget {
           children: <Widget>[
             ListTile(
               leading: Text(
-                "Mena",
+                "Meena",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
               trailing: CircleAvatar(
