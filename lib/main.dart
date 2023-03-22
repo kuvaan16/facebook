@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
         '/newsfeed':(context) =>  Newsfeed(),
         '/notfication':(context) => const NotficationPage(),
         '/setting':(context) => const SettingScreen(),
+        '/group':(context) => const GroupPage(),
       },
     );
   }

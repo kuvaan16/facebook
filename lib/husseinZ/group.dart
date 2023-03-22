@@ -84,14 +84,15 @@ class GroupPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
                   width: 150,
-                height: 130,
+                height: 150,
                child: Column(
               children: <Widget>[
                 ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   child: Image.asset("assets/gambol (1).jpg")),
-                SizedBox(height: 5,),
-            Text("Gambol world",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,letterSpacing: 1),)
+                SizedBox(width: 15,),
+            Text("Gambol world",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,letterSpacing: 1),),
+            
               ],
                ),
                 ),
@@ -101,7 +102,7 @@ class GroupPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
                   width: 150,
-                height: 130,
+                height: 150,
                child: Column(
               children: <Widget>[
                 ClipRRect(
@@ -118,7 +119,23 @@ class GroupPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
                   width: 150,
-                height: 130,
+                height: 150,
+               child: Column(
+              children: <Widget>[
+                ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  child: Image.asset("assets/jefrry.jpg")),
+                SizedBox(height: 5,),
+            Text("Cartoon Time",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,letterSpacing: 1),)
+              ],
+               ),
+                ),
+              ),SizedBox(width: 15,),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  width: 150,
+                height: 150,
                child: Column(
               children: <Widget>[
                 ClipRRect(
@@ -135,7 +152,7 @@ class GroupPage extends StatelessWidget {
               ],
             ),
           ),
-          Divider(thickness: 10,color: Colors.grey,),
+          Divider(thickness: 15,color: Colors.grey,),
         SizedBox(height: 5,),
         ListTile(
           leading: Text("You've Been Invited",
