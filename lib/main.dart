@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'husseinZ/group.dart';
 import 'kuvan/Login.dart';
 import 'kuvan/homescreen.dart';
+import 'kuvan/newsfeed.dart';
 import 'kuvan/notfication.dart';
 
 void main() {
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/':(context) =>  LoginPage(),
         '/homescreen':(context) => const HomeScreen(),
+        '/newsfeed':(context) => const Newsfeed(),
         '/notfication':(context) => const NotficationPage(),
         '/setting':(context) => const SettingScreen(),
       },
