@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/':(context) =>  LoginPage(),
         '/homescreen':(context) => const HomeScreen(),
-        '/newsfeed':(context) => const Newsfeed(),
+        '/newsfeed':(context) =>  Newsfeed(),
         '/notfication':(context) => const NotficationPage(),
         '/setting':(context) => const SettingScreen(),
       },

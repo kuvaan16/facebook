@@ -71,19 +71,19 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Tab(
               icon: Icon(
-                Icons.video_library,
+                Icons.ondemand_video_rounded,
                 color: Colors.black,
               ),
             ),
             Tab(
               icon: Icon(
-                Icons.person,
+                Icons.person_outline,
                 color: Colors.black,
               ),
             ),
             Tab(
               icon: Icon(
-                Icons.notifications_active,
+                Icons.notifications_none_rounded,
                 color: Colors.black,
               ),
             ),
