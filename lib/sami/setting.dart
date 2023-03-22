@@ -7,14 +7,156 @@ class SettingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        ListTile(
-          leading: Text("Mena",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
-          ),
-         
-        )
-      ],
+    return SingleChildScrollView(
+      child: Container(
+        color: Colors.grey[200],
+        child: Column(
+          children: <Widget>[
+            ListTile(
+              leading: Text("Mena",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
+              ),
+             trailing: CircleAvatar(
+              backgroundColor: Colors.grey[200],
+              child: Icon(Icons.search,color: Colors.black,)),
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                backgroundImage: AssetImage("assets/1.jpg"),
+                ),
+                title: Text("Tandin Wangchuk \n see your profile",style: TextStyle(
+                  fontWeight: FontWeight.bold
+                  ),),
+                  
+            ),
+            Divider(),
+               ListTile(
+              leading: CircleAvatar(
+                backgroundImage: AssetImage("assets/cr7.jpg"),
+                ),
+                title: Text("foodboil ",style: TextStyle(
+                  fontWeight: FontWeight.bold
+                  ),),
+                  
+            ),
+              ListTile(
+              leading: CircleAvatar(
+                backgroundImage: AssetImage("assets/br.jpg"),
+                ),
+                title: Text("facebook",style: TextStyle(
+                  fontWeight: FontWeight.bold
+                  ),),
+                  
+            ),
+              ListTile(
+              leading: CircleAvatar(
+                backgroundImage: AssetImage("assets/MESSI.jpg"),
+                ),
+                title: Text("gool ",style: TextStyle(
+                  fontWeight: FontWeight.bold
+                  ),),
+                  
+            ),
+            Divider(),
+            Row(
+              children: <Widget>[
+                ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  child: Container(
+                    height: 140,
+                    width: 200,
+                    color: Colors.white,
+                    child: Card(
+                      elevation: 5,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                        CircleAvatar(
+                          backgroundImage: AssetImage("assets/1-jpg"),
+                        ),
+                        SizedBox(height: 15,),
+                        Text("update facebook")
+                      ]
+                      ),
+                    ),
+                  ),
+                ),
+                 ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  child: Container(
+                    height: 140,
+                    width: 200,
+                    color: Colors.white,
+                    child: Card(
+                      elevation: 5,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                        CircleAvatar(
+                          backgroundImage: AssetImage("assets/1-jpg"),
+                        ),
+                        SizedBox(height: 15,),
+                        Text("update facebook")
+                      ]
+                      ),
+                    ),
+                  ),
+                ),
+                
+              ],
+            ),
+            SizedBox(height: 15,),
+                   Row(
+              children: <Widget>[
+                ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  child: Container(
+                    height: 140,
+                    width: 200,
+                    color: Colors.white,
+                    child: Card(
+                      elevation: 5,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                        CircleAvatar(
+                          backgroundImage: AssetImage("assets/1-jpg"),
+                        ),
+                        SizedBox(height: 15,),
+                        Text("update facebook")
+                      ]
+                      ),
+                    ),
+                  ),
+                ),
+                 ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  child: Container(
+                    height: 140,
+                    width: 200,
+                    color: Colors.white,
+                    child: Card(
+                      elevation: 5,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                        CircleAvatar(
+                          backgroundImage: AssetImage("assets/1-jpg"),
+                        ),
+                        SizedBox(height: 15,),
+                        Text("update facebook")
+                      ]
+                      ),
+                    ),
+                  ),
+                ),
+                
+              ],
+            ),
+             
+            SizedBox(height: 200,)
+          ],
+        ),
+      ),
     );
   }
 }
