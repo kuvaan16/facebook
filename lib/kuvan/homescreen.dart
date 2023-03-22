@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+import 'newsfeed.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -93,9 +95,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         body: TabBarView(
           children: <Widget>[
-            Center(
-              child: Text("newsfeed"),
-            ),
+            Newsfeed(),
             Center(
               child: Text("group"),
             ),
