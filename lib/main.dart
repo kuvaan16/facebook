@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'husseinZ/group.dart';
 import 'kuvan/Login.dart';
-import 'kuvan/newsfeed.dart';
+import 'kuvan/homescreen.dart';
 import 'kuvan/notfication.dart';
 
 void main() {
@@ -18,10 +18,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/group',
+      initialRoute: '/homescreen',
       routes: {
-        '/':(context) => const LoginPage(),
-        '/newsfeed':(context) => const NewsfeedPage(),
+        '/':(context) =>  LoginPage(),
+        '/homescreen':(context) => const HomeScreen(),
         '/notfication':(context) => const NotficationPage(),
         '/setting':(context) => const SettingScreen(),
       },
