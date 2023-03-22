@@ -71,7 +71,7 @@ class SettingScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                         CircleAvatar(
-                          backgroundImage: AssetImage("assets/1-jpg"),
+                          backgroundImage: AssetImage("assets/F.jpg"),
                         ),
                         SizedBox(height: 15,),
                         Text("update facebook")
@@ -92,7 +92,7 @@ class SettingScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                         CircleAvatar(
-                          backgroundImage: AssetImage("assets/1-jpg"),
+                          backgroundImage: AssetImage("assets/W.jpg"),
                         ),
                         SizedBox(height: 15,),
                         Text("update facebook")
@@ -152,7 +152,12 @@ class SettingScreen extends StatelessWidget {
                 
               ],
             ),
-             
+             SizedBox(height: 15,),
+             ListTile(
+              leading: Icon(Icons.exit_to_app),
+              title: Text("log out"),
+
+             ),
             SizedBox(height: 200,)
           ],
         ),
