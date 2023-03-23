@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         '/notfication':(context) => const NotficationPage(),
         '/setting':(context) => const SettingScreen(),
         '/group':(context) => const GroupPage(),
-        '/prfil':(context) => const ProfileScreen(),
+        '/profile':(context) => const ProfileScreen(),
       },
     );
   }
