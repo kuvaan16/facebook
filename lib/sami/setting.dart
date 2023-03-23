@@ -30,7 +30,7 @@ class SettingScreen extends StatelessWidget {
                 backgroundImage: AssetImage("assets/1.jpg"),
               ),
               title: Text(
-                "kurdstan \n see your profile",
+                "kurdstan \nsee your profile",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
@@ -55,7 +55,7 @@ class SettingScreen extends StatelessWidget {
             ),
             ListTile(
               leading: CircleAvatar(
-                backgroundImage: AssetImage("assets/MESSI.jpg"),
+                backgroundImage: AssetImage("assets/messi.jpg"),
               ),
               title: Text(
                 "court football player ",
@@ -69,7 +69,7 @@ class SettingScreen extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   child: Container(
                     height: 140,
-                    width: 200,
+                    width: 180,
                     color: Colors.white,
                     child: Card(
                       elevation: 5,
@@ -91,7 +91,7 @@ class SettingScreen extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   child: Container(
                     height: 140,
-                    width: 200,
+                    width: 180,
                     color: Colors.white,
                     child: Card(
                       elevation: 5,
@@ -120,7 +120,7 @@ class SettingScreen extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   child: Container(
                     height: 140,
-                    width: 200,
+                    width: 180,
                     color: Colors.white,
                     child: Card(
                       elevation: 5,
@@ -142,7 +142,7 @@ class SettingScreen extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   child: Container(
                     height: 140,
-                    width: 200,
+                    width: 180,
                     color: Colors.white,
                     child: Card(
                       elevation: 5,

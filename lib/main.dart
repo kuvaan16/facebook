@@ -19,15 +19,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/',
+      initialRoute: '/homescreen',
       routes: {
-        '/':(context) =>  LoginPage(),
-        '/homescreen':(context) => const HomeScreen(),
-        '/newsfeed':(context) =>  Newsfeed(),
-        '/notfication':(context) => const NotficationPage(),
-        '/setting':(context) => const SettingScreen(),
-        '/group':(context) => const GroupPage(),
-        '/profile':(context) => const ProfileScreen(),
+        '/': (context) => LoginPage(),
+        '/homescreen': (context) => const HomeScreen(),
+        '/newsfeed': (context) => Newsfeed(),
+        '/notfication': (context) => const NotficationPage(),
+        '/setting': (context) => const SettingScreen(),
+        '/group': (context) => const GroupPage(),
+        '/profile': (context) => const ProfileScreen(),
       },
     );
   }
