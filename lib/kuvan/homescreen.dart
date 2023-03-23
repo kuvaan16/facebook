@@ -4,8 +4,10 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 import '../husseinZ/group.dart';
+import '../sami/profile.dart';
 import '../sami/setting.dart';
 import 'newsfeed.dart';
+import 'notfication.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -102,12 +104,8 @@ class _HomeScreenState extends State<HomeScreen> {
             Center(
               child: Text("video"),
             ),
-            Center(
-              child: Text("profile"),
-            ),
-            Center(
-              child: Text("notfication"),
-            ),
+            ProfileScreen(),
+            NotficationPage(),
             SettingScreen(),
           ],
         ),
