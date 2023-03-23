@@ -1,4 +1,5 @@
 //import 'package:community_material_icon/community_material_icon.dart';
+import 'package:facebook/husseinZ/video.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -101,6 +102,7 @@ class _HomeScreenState extends State<HomeScreen> {
           children: <Widget>[
             Newsfeed(),
             GroupPage(),
+            VideoScreen(),
             Center(
               child: Text("video"),
             ),
