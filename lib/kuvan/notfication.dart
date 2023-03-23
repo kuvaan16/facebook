@@ -19,8 +19,8 @@ class _NotficationPageState extends State<NotficationPage> {
       children: <Widget>[
         ListTile(
           leading: Text(
-            "Notification",
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            "Notifications",
+            style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
           ),
           trailing: CircleAvatar(
             radius: 18,
@@ -33,7 +33,7 @@ class _NotficationPageState extends State<NotficationPage> {
           ),
         ),
         SizedBox(
-          height: 5,
+          height: 15,
         ),
         Row(
           children: [
@@ -47,33 +47,34 @@ class _NotficationPageState extends State<NotficationPage> {
           ],
         ),
         SizedBox(
-          height: 15,
+          height: 5,
         ),
-        ListTile(
-          leading: CircleAvatar(
-            radius: 35,
-            backgroundImage: AssetImage("assets/messi.jpg"),
-          ),
-          title: Html(
-              data:
-                  "<p><b>Sami Akre, Hussain Zebari</b> and 1616 other reacted to your post in <b>Flutter Cours</b></p>",
-              style: {
-                "p": Style(
-                    fontSize: FontSize.large, fontWeight: FontWeight.normal),
-                "b": Style(
-                  fontWeight: FontWeight.bold,
-                ),
-              }),
-              
-          trailing: Icon(
-            FontAwesomeIcons.ellipsis,
-            color: Colors.black,
-            size: 18,
-          ),
+        ListView(
+          
         ),
-        
-        Text("3 hours ago                                        ",
-            style: TextStyle(color: Colors.grey[600])),
+        // ListTile(
+        //   leading: CircleAvatar(
+        //     radius: 35,
+        //     backgroundImage: AssetImage("assets/messi.jpg"),
+        //   ),
+        //   title: Html(
+        //       data:
+        //           "<p><b>Sami Akre, Hussain Zebari</b> and 1616 other reacted to your post in <b>Flutter Cours</b></p>",
+        //       style: {
+        //         "p": Style(
+        //             fontSize: FontSize.large, fontWeight: FontWeight.normal),
+        //         "b": Style(
+        //           fontWeight: FontWeight.bold,
+        //         ),
+        //       }),
+        //   trailing: Icon(
+        //     FontAwesomeIcons.ellipsis,
+        //     color: Colors.black,
+        //     size: 18,
+        //   ),
+        // ),
+        // Text("3 hours ago                                        ",
+        //     style: TextStyle(color: Colors.grey[600])),
       ],
     );
   }
