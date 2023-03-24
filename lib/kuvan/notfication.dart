@@ -69,9 +69,9 @@ class _NotficationPageState extends State<NotficationPage> {
                         data: "<b>" +
                             userlist[index].name +
                             "</b>" +
-                            " and" +
+                            " and " +
                             (likes += 1).toString() +
-                            "other reacted to your post in <b>Flutter Cours</b>",
+                            " other reacted to your post in <b>Flutter Cours</b>",
                         style: {
                           "p": Style(
                               fontSize: FontSize.large,

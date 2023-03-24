@@ -103,7 +103,7 @@ class _VideoScreenState extends State<VideoScreen> {
     ],
     ),
     SizedBox(height: 5,),
-    Text("Here We Post Crazy Stuff  :)"),
+    Text("Here We Post Crazy Stuff  :)",),
     SizedBox(height: 15,),
     Image.asset("assets/jemcarry.gif"),
     SizedBox(height: 5,),

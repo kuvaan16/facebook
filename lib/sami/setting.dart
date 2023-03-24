@@ -15,7 +15,7 @@ class SettingScreen extends StatelessWidget {
           children: <Widget>[
             ListTile(
               leading: Text(
-                "Welcome",
+                "Menu",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
               trailing: CircleAvatar(
@@ -30,11 +30,14 @@ class SettingScreen extends StatelessWidget {
                 backgroundImage: AssetImage("assets/1.jpg"),
               ),
               title: Text(
-                "kurdstan \nsee your profile",
+                "kurdstan \nSee your profile",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
-            Divider(),
+            Divider(
+              thickness: 1,
+              color: Colors.grey[400],
+            ),
             ListTile(
               leading: CircleAvatar(
                 backgroundImage: AssetImage("assets/cr7.jpg"),
@@ -62,7 +65,10 @@ class SettingScreen extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
-            Divider(),
+            Divider(
+              thickness: 1,
+              color: Colors.grey[400],
+            ),
             Row(
               children: <Widget>[
                 ClipRRect(
