@@ -1,4 +1,5 @@
 import 'package:community_material_icon/community_material_icon.dart';
+import 'package:facebook/userdata.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -13,6 +14,7 @@ class NotficationPage extends StatefulWidget {
 }
 
 class _NotficationPageState extends State<NotficationPage> {
+  int likes = 1614;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -49,9 +51,42 @@ class _NotficationPageState extends State<NotficationPage> {
         SizedBox(
           height: 5,
         ),
-        ListView(
-          
-        ),
+        ListView.builder(
+          physics: NeverScrollableScrollPhysics(),
+          shrinkWrap: true,
+          itemCount: userlist.length,
+          itemBuilder: (context, index) {
+            return Container(
+              width: 400,
+              margin: EdgeInsets.all(10),
+              padding: EdgeInsets.all(5),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Title(
+                    color: Colors.black,
+                    child: Html(
+                        data: "<b>" +
+                            userlist[index].name +
+                            "</b>" +
+                            " and" +
+                            (likes += 1).toString() +
+                            "other reacted to your post in <b>Flutter Cours</b>",
+                        style: {
+                          "p": Style(
+                              fontSize: FontSize.large,
+                              fontWeight: FontWeight.normal),
+                          "b": Style(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        }),
+                  )
+                ],
+              ),
+            );
+          },
+        )
+
         // ListTile(
         //   leading: CircleAvatar(
         //     radius: 35,

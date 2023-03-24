@@ -3,7 +3,7 @@ class User {
   User({required this.name});
 }
 
-List<User> userList = [
+List<User> userlist = [
   User(name: "Sami Akrey"),
   User(name: "HusseinZ"),
   User(name: "Kuvaan16"),
