@@ -103,7 +103,6 @@ class _HomeScreenState extends State<HomeScreen> {
             Newsfeed(),
             GroupPage(),
             VideoScreen(),
-          
             ProfileScreen(),
             NotficationPage(),
             SettingScreen(),
