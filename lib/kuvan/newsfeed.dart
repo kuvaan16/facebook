@@ -20,7 +20,7 @@ class _NewsfeedState extends State<Newsfeed> {
         child: Column(
           children: <Widget>[
             SizedBox(
-              height: 20,
+              height: 15,
             ),
             Container(
               color: Colors.white60,
@@ -30,11 +30,11 @@ class _NewsfeedState extends State<Newsfeed> {
                     width: 5,
                   ),
                   CircleAvatar(
-                    radius: 30,
+                    radius: 20,
                     backgroundImage: AssetImage("assets/messi.jpg"),
                   ),
                   SizedBox(
-                    width: 15,
+                    width: 10,
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.all(Radius.circular(25)),
@@ -45,13 +45,11 @@ class _NewsfeedState extends State<Newsfeed> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(25)),
                         border: Border.all(width: 1, color: Colors.grey),
-                        color: Colors.grey[100],
                       ),
                       child: Center(
                           child: Text(
                         "What's on your mind?                          ",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
+                        style: TextStyle(fontSize: 16),
                       )),
                     ),
                   ),
@@ -119,12 +117,12 @@ class _NewsfeedState extends State<Newsfeed> {
             ),
             Divider(
               height: 2,
-              thickness: 15,
+              thickness: 10,
               color: Colors.grey[400],
             ),
             Container(
               color: Colors.white,
-              height: 80,
+              height: 70,
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -195,126 +193,126 @@ class _NewsfeedState extends State<Newsfeed> {
                         ),
                       ],
                     ),
-                    Stack(
-                      children: <Widget>[
-                        Container(
-                          width: 65,
-                          height: 50,
-                        ),
-                        CircleAvatar(
-                          radius: 25,
-                          backgroundImage: AssetImage("assets/messi.jpg"),
-                        ),
-                        Positioned(
-                          left: 33,
-                          top: 33,
-                          child: CircleAvatar(
-                            radius: 9,
-                            backgroundColor: Colors.white,
-                            child: CircleAvatar(
-                              radius: 7,
-                              backgroundColor: Colors.green,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Stack(
-                      children: <Widget>[
-                        Container(
-                          width: 65,
-                          height: 50,
-                        ),
-                        CircleAvatar(
-                          radius: 25,
-                          backgroundImage: AssetImage("assets/messi.jpg"),
-                        ),
-                        Positioned(
-                          left: 33,
-                          top: 33,
-                          child: CircleAvatar(
-                            radius: 9,
-                            backgroundColor: Colors.white,
-                            child: CircleAvatar(
-                              radius: 7,
-                              backgroundColor: Colors.green,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Stack(
-                      children: <Widget>[
-                        Container(
-                          width: 65,
-                          height: 50,
-                        ),
-                        CircleAvatar(
-                          radius: 25,
-                          backgroundImage: AssetImage("assets/messi.jpg"),
-                        ),
-                        Positioned(
-                          left: 33,
-                          top: 33,
-                          child: CircleAvatar(
-                            radius: 9,
-                            backgroundColor: Colors.white,
-                            child: CircleAvatar(
-                              radius: 7,
-                              backgroundColor: Colors.green,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Stack(
-                      children: <Widget>[
-                        Container(
-                          width: 65,
-                          height: 50,
-                        ),
-                        CircleAvatar(
-                          radius: 25,
-                          backgroundImage: AssetImage("assets/messi.jpg"),
-                        ),
-                        Positioned(
-                          left: 33,
-                          top: 33,
-                          child: CircleAvatar(
-                            radius: 9,
-                            backgroundColor: Colors.white,
-                            child: CircleAvatar(
-                              radius: 7,
-                              backgroundColor: Colors.green,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Stack(
-                      children: <Widget>[
-                        Container(
-                          width: 65,
-                          height: 50,
-                        ),
-                        CircleAvatar(
-                          radius: 25,
-                          backgroundImage: AssetImage("assets/messi.jpg"),
-                        ),
-                        Positioned(
-                          left: 33,
-                          top: 33,
-                          child: CircleAvatar(
-                            radius: 9,
-                            backgroundColor: Colors.white,
-                            child: CircleAvatar(
-                              radius: 7,
-                              backgroundColor: Colors.green,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                    // Stack(
+                    //   children: <Widget>[
+                    //     Container(
+                    //       width: 65,
+                    //       height: 50,
+                    //     ),
+                    //     CircleAvatar(
+                    //       radius: 25,
+                    //       backgroundImage: AssetImage("assets/messi.jpg"),
+                    //     ),
+                    //     Positioned(
+                    //       left: 33,
+                    //       top: 33,
+                    //       child: CircleAvatar(
+                    //         radius: 9,
+                    //         backgroundColor: Colors.white,
+                    //         child: CircleAvatar(
+                    //           radius: 7,
+                    //           backgroundColor: Colors.green,
+                    //         ),
+                    //       ),
+                    //     ),
+                    //   ],
+                    // ),
+                    // Stack(
+                    //   children: <Widget>[
+                    //     Container(
+                    //       width: 65,
+                    //       height: 50,
+                    //     ),
+                    //     CircleAvatar(
+                    //       radius: 25,
+                    //       backgroundImage: AssetImage("assets/messi.jpg"),
+                    //     ),
+                    //     Positioned(
+                    //       left: 33,
+                    //       top: 33,
+                    //       child: CircleAvatar(
+                    //         radius: 9,
+                    //         backgroundColor: Colors.white,
+                    //         child: CircleAvatar(
+                    //           radius: 7,
+                    //           backgroundColor: Colors.green,
+                    //         ),
+                    //       ),
+                    //     ),
+                    //   ],
+                    // ),
+                    // Stack(
+                    //   children: <Widget>[
+                    //     Container(
+                    //       width: 65,
+                    //       height: 50,
+                    //     ),
+                    //     CircleAvatar(
+                    //       radius: 25,
+                    //       backgroundImage: AssetImage("assets/messi.jpg"),
+                    //     ),
+                    //     Positioned(
+                    //       left: 33,
+                    //       top: 33,
+                    //       child: CircleAvatar(
+                    //         radius: 9,
+                    //         backgroundColor: Colors.white,
+                    //         child: CircleAvatar(
+                    //           radius: 7,
+                    //           backgroundColor: Colors.green,
+                    //         ),
+                    //       ),
+                    //     ),
+                    //   ],
+                    // ),
+                    // Stack(
+                    //   children: <Widget>[
+                    //     Container(
+                    //       width: 65,
+                    //       height: 50,
+                    //     ),
+                    //     CircleAvatar(
+                    //       radius: 25,
+                    //       backgroundImage: AssetImage("assets/messi.jpg"),
+                    //     ),
+                    //     Positioned(
+                    //       left: 33,
+                    //       top: 33,
+                    //       child: CircleAvatar(
+                    //         radius: 9,
+                    //         backgroundColor: Colors.white,
+                    //         child: CircleAvatar(
+                    //           radius: 7,
+                    //           backgroundColor: Colors.green,
+                    //         ),
+                    //       ),
+                    //     ),
+                    //   ],
+                    // ),
+                    // Stack(
+                    //   children: <Widget>[
+                    //     Container(
+                    //       width: 65,
+                    //       height: 50,
+                    //     ),
+                    //     CircleAvatar(
+                    //       radius: 25,
+                    //       backgroundImage: AssetImage("assets/messi.jpg"),
+                    //     ),
+                    //     Positioned(
+                    //       left: 33,
+                    //       top: 33,
+                    //       child: CircleAvatar(
+                    //         radius: 9,
+                    //         backgroundColor: Colors.white,
+                    //         child: CircleAvatar(
+                    //           radius: 7,
+                    //           backgroundColor: Colors.green,
+                    //         ),
+                    //       ),
+                    //     ),
+                    //   ],
+                    // ),
                   ],
                 ),
               ),
