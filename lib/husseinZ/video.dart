@@ -60,7 +60,7 @@ class _VideoScreenState extends State<VideoScreen> {
       top: 10,
       child:   CircleAvatar(
       radius: 15,
-      backgroundImage: AssetImage("assets/space.jpg"),
+      backgroundImage: AssetImage("assets/messi.jpg"),
       ),
     ),
     Positioned(
@@ -68,7 +68,7 @@ class _VideoScreenState extends State<VideoScreen> {
       top: 10,
       child:   CircleAvatar(
       radius: 15,
-      backgroundImage: AssetImage("assets/gambol.jpg"),
+      backgroundImage: AssetImage("assets/messi.jpg"),
       ),
     )
         ],
@@ -94,7 +94,7 @@ class _VideoScreenState extends State<VideoScreen> {
       SizedBox(width: 5,),
       CircleAvatar(
         radius: 20,
-        backgroundImage: AssetImage("assets/heads.jpg",),
+        backgroundImage: AssetImage("assets/messi.jpg",),
       ),
       SizedBox(width: 5,),
     Text("Crazy World",style: TextStyle(fontWeight: FontWeight.bold),),
@@ -105,7 +105,7 @@ class _VideoScreenState extends State<VideoScreen> {
     SizedBox(height: 5,),
     Text("Here We Post Crazy Stuff  :)",),
     SizedBox(height: 15,),
-    Image.asset("assets/jemcarry.gif"),
+    Image.asset("assets/messi.gif"),
     SizedBox(height: 5,),
     ListTile(
       leading: Stack(

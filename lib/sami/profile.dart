@@ -23,7 +23,7 @@ class ProfileScreen extends StatelessWidget {
                   height: 200,
                   width: 500,
                   child: Image.asset(
-                    "assets/1.jpg",
+                    "assets/messi.jpg",
                     fit: BoxFit.cover,
                   )),
               Positioned(
@@ -47,7 +47,7 @@ class ProfileScreen extends StatelessWidget {
                   backgroundColor: Colors.white,
                   child: CircleAvatar(
                     radius: 75,
-                    backgroundImage: AssetImage("assets/cr7.jpg"),
+                    backgroundImage: AssetImage("assets/messi.jpg"),
                   ),
                 ),
               ),

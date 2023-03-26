@@ -27,7 +27,7 @@ class SettingScreen extends StatelessWidget {
             ),
             ListTile(
               leading: CircleAvatar(
-                backgroundImage: AssetImage("assets/1.jpg"),
+                backgroundImage: AssetImage("assets/messi.jpg"),
               ),
               title: Text(
                 "kurdstan \nSee your profile",
@@ -40,7 +40,7 @@ class SettingScreen extends StatelessWidget {
             ),
             ListTile(
               leading: CircleAvatar(
-                backgroundImage: AssetImage("assets/cr7.jpg"),
+                backgroundImage: AssetImage("assets/messi.jpg"),
               ),
               title: Text(
                 "soccer player",
@@ -49,7 +49,7 @@ class SettingScreen extends StatelessWidget {
             ),
             ListTile(
               leading: CircleAvatar(
-                backgroundImage: AssetImage("assets/br.jpg"),
+                backgroundImage: AssetImage("assets/messi.jpg"),
               ),
               title: Text(
                 "facebook",
@@ -83,7 +83,7 @@ class SettingScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             CircleAvatar(
-                              backgroundImage: AssetImage("assets/br.jpg"),
+                              backgroundImage: AssetImage("assets/messi.jpg"),
                             ),
                             SizedBox(
                               height: 15,
@@ -105,7 +105,7 @@ class SettingScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             CircleAvatar(
-                              backgroundImage: AssetImage("assets/W.jpg"),
+                              backgroundImage: AssetImage("assets/messi.jpg"),
                             ),
                             SizedBox(
                               height: 15,
@@ -134,7 +134,7 @@ class SettingScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             CircleAvatar(
-                              backgroundImage: AssetImage("assets/1.jpg"),
+                              backgroundImage: AssetImage("assets/messi.jpg"),
                             ),
                             SizedBox(
                               height: 15,
@@ -156,7 +156,7 @@ class SettingScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             CircleAvatar(
-                              backgroundImage: AssetImage("assets/benz.jpg"),
+                              backgroundImage: AssetImage("assets/messi.jpg"),
                             ),
                             SizedBox(
                               height: 15,
