@@ -103,7 +103,7 @@ class _NewsfeedPostState extends State<NewsfeedPost> {
                           Icons.thumb_up_alt,
                           color: Colors.blue,
                         ),
-                        Text(likes.toString(),
+                        Text(userlist[index].likes.toString(),
                             style: TextStyle(color: Colors.grey[400])),
                       ],
                     ),
@@ -150,9 +150,9 @@ class _NewsfeedPostState extends State<NewsfeedPost> {
                             setState(() {
                               click = !click;
                               if (!click) {
-                                likes++;
+                                userlist[index].likes++;
                               } else {
-                                likes--;
+                                userlist[index].likes--;
                               }
                             });
                           },
