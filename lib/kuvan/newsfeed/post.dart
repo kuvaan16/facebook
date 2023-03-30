@@ -14,6 +14,8 @@ class NewsfeedPost extends StatefulWidget {
 }
 
 class _NewsfeedPostState extends State<NewsfeedPost> {
+  bool click = true;
+  int likes = 16;
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -101,12 +103,14 @@ class _NewsfeedPostState extends State<NewsfeedPost> {
                           Icons.thumb_up_alt,
                           color: Colors.blue,
                         ),
-                        Text("16", style: TextStyle(color: Colors.grey[400])),
+                        Text(likes.toString(),
+                            style: TextStyle(color: Colors.grey[400])),
                       ],
                     ),
                     Row(
                       children: [Text("  ")],
-                    ),Row(
+                    ),
+                    Row(
                       children: [Text("  ")],
                     ),
                     Row(
@@ -140,7 +144,22 @@ class _NewsfeedPostState extends State<NewsfeedPost> {
                         SizedBox(
                           width: 10,
                         ),
-                        Icon(Icons.thumb_up_outlined, color: Colors.grey[500]),
+                        IconButton(
+                          color: click ? Colors.grey[500] : Colors.blue,
+                          onPressed: () {
+                            setState(() {
+                              click = !click;
+                              if (!click) {
+                                likes++;
+                              } else {
+                                likes--;
+                              }
+                            });
+                          },
+                          icon: Icon(click
+                              ? Icons.thumb_up_outlined
+                              : Icons.thumb_up_alt),
+                        ),
                         SizedBox(
                           width: 5,
                         ),
@@ -153,7 +172,6 @@ class _NewsfeedPostState extends State<NewsfeedPost> {
                     Row(
                       children: [
                         Icon(FontAwesomeIcons.message, color: Colors.grey[500]),
-                        
                         Text(
                           " Comment",
                           style: TextStyle(color: Colors.grey[500]),
@@ -163,7 +181,6 @@ class _NewsfeedPostState extends State<NewsfeedPost> {
                     Row(
                       children: [
                         Icon(FontAwesomeIcons.share, color: Colors.grey[500]),
-                        
                         Text(
                           " Share",
                           style: TextStyle(color: Colors.grey[500]),

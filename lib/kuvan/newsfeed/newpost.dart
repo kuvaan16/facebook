@@ -40,7 +40,7 @@ class NewPost extends StatelessWidget {
             thickness: 1,
             color: Colors.grey[300],
             indent: 15,
-            endIndent: 10,
+            endIndent: 15,
           ),
           SizedBox(
             height: 5,
