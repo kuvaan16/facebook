@@ -15,7 +15,6 @@ class NewsfeedPost extends StatefulWidget {
 
 class _NewsfeedPostState extends State<NewsfeedPost> {
   bool click = true;
-  int likes = 16;
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -26,7 +25,6 @@ class _NewsfeedPostState extends State<NewsfeedPost> {
         padding: EdgeInsets.symmetric(vertical: 15),
         itemBuilder: (BuildContext context, int index) {
           return Container(
-            width: MediaQuery.of(context).size.width,
             child: Column(
               children: [
                 Row(
@@ -38,17 +36,20 @@ class _NewsfeedPostState extends State<NewsfeedPost> {
                           margin: EdgeInsets.only(left: 10, top: 10),
                           child: CircleAvatar(
                             radius: 22,
-                            backgroundImage: AssetImage("assets/messi.jpg"),
+                            backgroundImage: AssetImage(userlist[index].img),
                           ),
                         ),
                         Container(
-                          width: MediaQuery.of(context).size.width - 300,
-                          margin: EdgeInsets.only(left: 5, top: 10),
+                          width: MediaQuery.of(context).size.width - 200,
+                          margin: EdgeInsets.only(top: 10),
                           child: Title(
                             color: Colors.black,
                             child: Html(
-                                data:
-                                    "<p><b>Leo Messi</b><br><span>16m</span></p>",
+                                data: "<p><b>" +
+                                    userlist[index].name +
+                                    "</b><br><span>" +
+                                    userlist[index].postedtime.toString() +
+                                    "m</span></p>",
                                 style: {
                                   "p": Style(
                                     fontSize: FontSize(15),
@@ -87,7 +88,7 @@ class _NewsfeedPostState extends State<NewsfeedPost> {
                   child: Container(
                     child: Image.asset(
                       userlist[index].img,
-                      fit: BoxFit.fill,
+                      fit: BoxFit.fitWidth,
                     ),
                   ),
                 ),
@@ -116,7 +117,10 @@ class _NewsfeedPostState extends State<NewsfeedPost> {
                     Row(
                       children: [
                         Text(
-                          "16 comment . 16 share",
+                          userlist[index].comment.toString() +
+                              " comment . " +
+                              userlist[index].share.toString() +
+                              " share",
                           style: TextStyle(color: Colors.grey[400]),
                         ),
                       ],
@@ -141,27 +145,9 @@ class _NewsfeedPostState extends State<NewsfeedPost> {
                   children: [
                     Row(
                       children: [
-                        SizedBox(
-                          width: 10,
-                        ),
-                        IconButton(
-                          color: click ? Colors.grey[500] : Colors.blue,
-                          onPressed: () {
-                            setState(() {
-                              click = !click;
-                              if (!click) {
-                                userlist[index].likes++;
-                              } else {
-                                userlist[index].likes--;
-                              }
-                            });
-                          },
-                          icon: Icon(click
-                              ? Icons.thumb_up_outlined
-                              : Icons.thumb_up_alt),
-                        ),
-                        SizedBox(
-                          width: 5,
+                        Icon(
+                          Icons.thumb_up_outlined,
+                          color: Colors.grey[500],
                         ),
                         Text(
                           " Like",
