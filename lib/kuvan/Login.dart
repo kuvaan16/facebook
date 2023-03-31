@@ -74,7 +74,7 @@ class LoginPage extends StatelessWidget {
                   onPressed: () {
                     
 
-                    Navigator.pushNamed(context, '/newsfeed');
+                    Navigator.pushNamed(context, '/homescreen');
                   },
                   style: ButtonStyle(
                       padding: MaterialStateProperty.all(
