@@ -15,7 +15,7 @@ class LoginPage extends StatelessWidget {
           key: _key,
           child: Column(
             children: <Widget>[
-              Image.asset("assets/login.jpg"),
+              Image.asset("assets/login.jpg",fit: BoxFit.cover,width: MediaQuery.of(context).size.width,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
