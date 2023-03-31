@@ -15,7 +15,11 @@ class LoginPage extends StatelessWidget {
           key: _key,
           child: Column(
             children: <Widget>[
-              Image.asset("assets/login.jpg",fit: BoxFit.cover,width: MediaQuery.of(context).size.width,),
+              Image.asset(
+                "assets/login.jpg",
+                fit: BoxFit.cover,
+                width: MediaQuery.of(context).size.width,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -70,8 +74,6 @@ class LoginPage extends StatelessWidget {
               ElevatedButton(
                 child: Text("Log In"),
                 onPressed: () {
-                  
-
                   Navigator.pushNamed(context, '/homescreen');
                 },
                 style: ButtonStyle(
@@ -85,13 +87,16 @@ class LoginPage extends StatelessWidget {
                 onPressed: () {},
                 child: Text(
                   "Forgot Password?",
+                  style: TextStyle(
+                      color: Color.fromRGBO(59, 89, 152, 1),
+                      fontWeight: FontWeight.w600),
                 ),
               ),
               SizedBox(
-                height: 40,
+                height: 150,
               ),
               Text(
-                  "-----------------------------OR-----------------------------",
+                  "----------------------------- Or -----------------------------",
                   style: TextStyle(color: Colors.grey)),
               SizedBox(
                 height: 40,
