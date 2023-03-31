@@ -67,19 +67,16 @@ class LoginPage extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 0),
-                child: ElevatedButton(
-                  child: Text("Log In"),
-                  onPressed: () {
-                    
+              ElevatedButton(
+                child: Text("Log In"),
+                onPressed: () {
+                  
 
-                    Navigator.pushNamed(context, '/homescreen');
-                  },
-                  style: ButtonStyle(
-                      padding: MaterialStateProperty.all(
-                          EdgeInsets.symmetric(horizontal: 108, vertical: 13))),
-                ),
+                  Navigator.pushNamed(context, '/homescreen');
+                },
+                style: ButtonStyle(
+                    padding: MaterialStateProperty.all(
+                        EdgeInsets.symmetric(horizontal: 108, vertical: 13))),
               ),
               SizedBox(
                 height: 20,

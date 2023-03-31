@@ -1,3 +1,4 @@
+import 'package:facebook/kuvan/splash.dart';
 import 'package:facebook/sami/profile.dart';
 import 'package:facebook/sami/setting.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => LoginPage(),
+        '/': (context) => SplashScreen(),
+        '/login': (context) => LoginPage(),
         '/homescreen': (context) => const HomeScreen(),
         '/newsfeed': (context) => Newsfeed(),
         '/notfication': (context) => const NotficationPage(),
