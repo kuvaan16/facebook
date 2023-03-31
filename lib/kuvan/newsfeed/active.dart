@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-import '../../userdata.dart';
+import '../models/post.dart';
+
+
+
 
 class ActiveSection extends StatelessWidget {
   const ActiveSection({super.key});
