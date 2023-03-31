@@ -117,7 +117,7 @@ class GroupPage extends StatelessWidget {
                           ClipRRect(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(15)),
-                              child: Image.asset("assets/messi.jpg")),
+                              child: Image.asset("assets/gaambol.jpg")),
                           SizedBox(
                             width: 15,
                           ),
@@ -145,7 +145,7 @@ class GroupPage extends StatelessWidget {
                           ClipRRect(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(15)),
-                              child: Image.asset("assets/messi.jpg")),
+                              child: Image.asset("assets/heads.jpg")),
                           SizedBox(
                             height: 5,
                           ),
@@ -173,12 +173,12 @@ class GroupPage extends StatelessWidget {
                           ClipRRect(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(15)),
-                              child: Image.asset("assets/messi.jpg")),
+                              child: Image.asset("assets/jefrry.jpg")),
                           SizedBox(
                             height: 5,
                           ),
                           Text(
-                            "Cartoon Time",
+                            "Red jeff",
                             style: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold,
@@ -201,7 +201,7 @@ class GroupPage extends StatelessWidget {
                           ClipRRect(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(15)),
-                              child: Image.asset("assets/messi.jpg")),
+                              child: Image.asset("assets/jefrry.jpg")),
                           SizedBox(
                             height: 5,
                           ),
@@ -251,7 +251,7 @@ class GroupPage extends StatelessWidget {
                       ListTile(
                         leading: ClipRRect(
                             borderRadius: BorderRadius.all(Radius.circular(15)),
-                            child: Image.asset("assets/messi.jpg")),
+                            child: Image.asset("assets/space.jpg")),
                         title: Column(
                           children: <Widget>[
                             Text(
@@ -361,7 +361,7 @@ class GroupPage extends StatelessWidget {
                 radius: 30,
                 child: CircleAvatar(
                   radius: 25,
-                  backgroundImage: AssetImage("assets/messi.jpg"),
+                  backgroundImage: AssetImage("assets/gambol(1).jpg"),
                 ),
               ),
               title: Row(
