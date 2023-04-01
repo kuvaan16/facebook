@@ -27,91 +27,257 @@ class SettingScreen extends StatelessWidget {
             ),
             ListTile(
               leading: CircleAvatar(
-                backgroundImage: AssetImage("assets/messi.jpg"),
+                backgroundImage: AssetImage("assets/photo_5.jpg"),
               ),
-              title: Text(
-                "kurdstan \nSee your profile",
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-            ),
-            Divider(
-              thickness: 1,
-              color: Colors.grey[400],
-            ),
-            ListTile(
-              leading: CircleAvatar(
-                backgroundImage: AssetImage("assets/messi.jpg"),
-              ),
-              title: Text(
-                "soccer player",
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-            ),
-            ListTile(
-              leading: CircleAvatar(
-                backgroundImage: AssetImage("assets/messi.jpg"),
-              ),
-              title: Text(
-                "facebook",
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-            ),
-            ListTile(
-              leading: CircleAvatar(
-                backgroundImage: AssetImage("assets/messi.jpg"),
-              ),
-              title: Text(
-                "court football player ",
-                style: TextStyle(fontWeight: FontWeight.bold),
+              title: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Sami Sabah ",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    "See your profile",
+                    style: TextStyle(color: Colors.grey[500]),
+                  ),
+                ],
               ),
             ),
             Divider(
               thickness: 1,
               color: Colors.grey[400],
+            ),
+            ListTile(
+              title: Text(
+                "Your shortcuts",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                backgroundImage: AssetImage("assets/photo_3.jpg"),
+              ),
+              title: Text(
+                "Mevan",
+                style: TextStyle(color: Colors.grey[500]),
+              ),
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                backgroundImage: AssetImage("assets/photo_9.jpg"),
+              ),
+              title: Text(
+                "Omer",
+                style: TextStyle(color: Colors.grey[500]),
+              ),
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                backgroundImage: AssetImage("assets/photo_16.jpg"),
+              ),
+              title: Text(
+                "Rejin",
+                style: TextStyle(color: Colors.grey[500]),
+              ),
+            ),
+            ListTile(
+              title: Text(
+                "All shortcuts",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
             ),
             Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 ClipRRect(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  borderRadius: BorderRadius.all(Radius.circular(25)),
                   child: Container(
-                    height: 140,
+                    height: 90,
                     width: 180,
                     color: Colors.white,
                     child: Card(
                       elevation: 5,
-                      child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            CircleAvatar(
-                              backgroundImage: AssetImage("assets/messi.jpg"),
-                            ),
-                            SizedBox(
-                              height: 15,
-                            ),
-                            Text("Hello Brazil ")
-                          ]),
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          left: 8,
+                        ),
+                        child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              CircleAvatar(
+                                backgroundImage:
+                                    AssetImage("assets/photo_2.jpg"),
+                                radius: 16,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text("...")
+                            ]),
+                      ),
                     ),
                   ),
                 ),
                 ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   child: Container(
-                    height: 140,
+                    height: 90,
                     width: 180,
                     color: Colors.white,
                     child: Card(
                       elevation: 5,
-                      child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            CircleAvatar(
-                              backgroundImage: AssetImage("assets/messi.jpg"),
-                            ),
-                            SizedBox(
-                              height: 15,
-                            ),
-                            Text("Hour.....")
-                          ]),
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          left: 8,
+                        ),
+                        child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              CircleAvatar(
+                                backgroundImage:
+                                    AssetImage("assets/photo_10.jpg"),
+                                radius: 16,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(".....")
+                            ]),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(25)),
+                  child: Container(
+                    height: 90,
+                    width: 180,
+                    color: Colors.white,
+                    child: Card(
+                      elevation: 5,
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          left: 8,
+                        ),
+                        child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              CircleAvatar(
+                                backgroundImage:
+                                    AssetImage("assets/photo_2.jpg"),
+                                radius: 16,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text("...")
+                            ]),
+                      ),
+                    ),
+                  ),
+                ),
+                ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  child: Container(
+                    height: 90,
+                    width: 180,color: Colors.white,
+                    child: Card(
+                      elevation: 5,
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          left: 8,
+                        ),
+                        child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              CircleAvatar(
+                                backgroundImage:
+                                    AssetImage("assets/photo_10.jpg"),
+                                radius: 16,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(".....")
+                            ]),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(25)),
+                  child: Container(
+                    height: 90,
+                    width: 180,
+                    color: Colors.white,
+                    child: Card(
+                      elevation: 5,
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          left: 8,
+                        ),
+                        child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              CircleAvatar(
+                                backgroundImage:
+                                    AssetImage("assets/photo_2.jpg"),
+                                radius: 16,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text("...")
+                            ]),
+                      ),
+                    ),
+                  ),
+                ),
+                ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  child: Container(
+                    height: 90,
+                    width: 180,
+                    color: Colors.white,
+                    child: Card(
+                      elevation: 5,
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          left: 8,
+                        ),
+                        child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              CircleAvatar(
+                                backgroundImage:
+                                    AssetImage("assets/photo_10.jpg"),
+                                radius: 16,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(".....")
+                            ]),
+                      ),
                     ),
                   ),
                 ),
@@ -120,60 +286,40 @@ class SettingScreen extends StatelessWidget {
             SizedBox(
               height: 15,
             ),
-            Row(
-              children: <Widget>[
-                ClipRRect(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                  child: Container(
-                    height: 140,
-                    width: 180,
-                    color: Colors.white,
-                    child: Card(
-                      elevation: 5,
-                      child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            CircleAvatar(
-                              backgroundImage: AssetImage("assets/messi.jpg"),
-                            ),
-                            SizedBox(
-                              height: 15,
-                            ),
-                            Text("Kurdstan My Country")
-                          ]),
-                    ),
-                  ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 0),
+              child: ElevatedButton(
+                child: Text(
+                  "See more",
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.bold),
                 ),
-                ClipRRect(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                  child: Container(
-                    height: 140,
-                    width: 180,
-                    color: Colors.white,
-                    child: Card(
-                      elevation: 5,
-                      child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            CircleAvatar(
-                              backgroundImage: AssetImage("assets/messi.jpg"),
-                            ),
-                            SizedBox(
-                              height: 15,
-                            ),
-                            Text("French Player")
-                          ]),
-                    ),
-                  ),
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.grey[200],
+                  padding: EdgeInsets.symmetric(horizontal: 150, vertical: 13),
                 ),
-              ],
+              ),
             ),
             SizedBox(
               height: 15,
             ),
-            ListTile(
-              leading: Icon(Icons.exit_to_app),
-              title: Text("log out"),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 0),
+              child: ElevatedButton(
+                child: Text(
+                  "Log out",
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.bold),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/login');
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.grey[200],
+                  padding: EdgeInsets.symmetric(horizontal: 150, vertical: 13),
+                ),
+              ),
             ),
             SizedBox(
               height: 200,

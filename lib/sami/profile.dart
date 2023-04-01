@@ -23,7 +23,7 @@ class ProfileScreen extends StatelessWidget {
                   height: 200,
                   width: 500,
                   child: Image.asset(
-                    "assets/messi.jpg",
+                    "assets/photo_12.jpg",
                     fit: BoxFit.cover,
                   )),
               Positioned(
@@ -47,7 +47,7 @@ class ProfileScreen extends StatelessWidget {
                   backgroundColor: Colors.white,
                   child: CircleAvatar(
                     radius: 75,
-                    backgroundImage: AssetImage("assets/messi.jpg"),
+                    backgroundImage: AssetImage("assets/photo_5.jpg"),
                   ),
                 ),
               ),
@@ -66,11 +66,11 @@ class ProfileScreen extends StatelessWidget {
             ],
           ),
           Text(
-            "Cristiano Ronaldo",
+            "Sami Sabah",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
           ),
           Text(
-            "portugal",
+            "Computer science",
           ),
           SizedBox(
             height: 15,
