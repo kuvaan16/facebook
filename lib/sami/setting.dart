@@ -107,14 +107,13 @@ class SettingScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
                               CircleAvatar(
-                                backgroundImage:
-                                    AssetImage("assets/photo_2.jpg"),
+                                backgroundImage: AssetImage("assets/jef.jpg"),
                                 radius: 16,
                               ),
                               SizedBox(
                                 height: 10,
                               ),
-                              Text("...")
+                              Text("Groups")
                             ]),
                       ),
                     ),
@@ -138,13 +137,13 @@ class SettingScreen extends StatelessWidget {
                             children: <Widget>[
                               CircleAvatar(
                                 backgroundImage:
-                                    AssetImage("assets/photo_10.jpg"),
+                                    AssetImage("assets/gambol (1).jpg"),
                                 radius: 16,
                               ),
                               SizedBox(
                                 height: 10,
                               ),
-                              Text(".....")
+                              Text("Friends")
                             ]),
                       ),
                     ),
@@ -173,14 +172,13 @@ class SettingScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
                               CircleAvatar(
-                                backgroundImage:
-                                    AssetImage("assets/photo_2.jpg"),
+                                backgroundImage: AssetImage("assets/space.jpg"),
                                 radius: 16,
                               ),
                               SizedBox(
                                 height: 10,
                               ),
-                              Text("...")
+                              Text("Videos on Watch")
                             ]),
                       ),
                     ),
@@ -190,7 +188,8 @@ class SettingScreen extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   child: Container(
                     height: 90,
-                    width: 180,color: Colors.white,
+                    width: 180,
+                    color: Colors.white,
                     child: Card(
                       elevation: 5,
                       child: Padding(
@@ -203,13 +202,13 @@ class SettingScreen extends StatelessWidget {
                             children: <Widget>[
                               CircleAvatar(
                                 backgroundImage:
-                                    AssetImage("assets/photo_10.jpg"),
+                                    AssetImage("assets/photo_16.jpg"),
                                 radius: 16,
                               ),
                               SizedBox(
                                 height: 10,
                               ),
-                              Text(".....")
+                              Text("Marketplace")
                             ]),
                       ),
                     ),
@@ -238,14 +237,13 @@ class SettingScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
                               CircleAvatar(
-                                backgroundImage:
-                                    AssetImage("assets/photo_2.jpg"),
+                                backgroundImage: AssetImage("assets/heads.jpg"),
                                 radius: 16,
                               ),
                               SizedBox(
                                 height: 10,
                               ),
-                              Text("...")
+                              Text("Pages")
                             ]),
                       ),
                     ),
@@ -275,7 +273,7 @@ class SettingScreen extends StatelessWidget {
                               SizedBox(
                                 height: 10,
                               ),
-                              Text(".....")
+                              Text("Reels")
                             ]),
                       ),
                     ),
