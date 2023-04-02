@@ -294,13 +294,21 @@ class SettingScreen extends StatelessWidget {
                 ),
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.grey[200],
-                  padding: EdgeInsets.symmetric(horizontal: 150, vertical: 13),
+                  elevation: 0,
+                  backgroundColor: Colors.grey[300],
+                  padding: EdgeInsets.symmetric(horizontal: 150, vertical: 15),
                 ),
               ),
             ),
             SizedBox(
-              height: 15,
+              height: 5,
+            ),
+            Divider(
+              thickness: 1,
+              color: Colors.grey[400],
+            ),
+            SizedBox(
+              height: 5,
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 0),
@@ -314,8 +322,9 @@ class SettingScreen extends StatelessWidget {
                   Navigator.pushNamed(context, '/login');
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.grey[200],
-                  padding: EdgeInsets.symmetric(horizontal: 150, vertical: 13),
+                  elevation: 0,
+                  backgroundColor: Colors.grey[300],
+                  padding: EdgeInsets.symmetric(horizontal: 150, vertical: 15),
                 ),
               ),
             ),
