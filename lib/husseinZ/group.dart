@@ -117,7 +117,7 @@ class GroupPage extends StatelessWidget {
                           ClipRRect(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(15)),
-                              child: Image.asset("assets/gaambol.jpg")),
+                              child: Image.asset("assets/heads.jpg")),
                           SizedBox(
                             width: 15,
                           ),
@@ -361,7 +361,7 @@ class GroupPage extends StatelessWidget {
                 radius: 30,
                 child: CircleAvatar(
                   radius: 25,
-                  backgroundImage: AssetImage("assets/gambol(1).jpg"),
+                  backgroundImage: AssetImage("assets/photo_2.jpg"),
                 ),
               ),
               title: Row(

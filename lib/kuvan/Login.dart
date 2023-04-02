@@ -19,6 +19,7 @@ class LoginPage extends StatelessWidget {
                 "assets/login.jpg",
                 fit: BoxFit.cover,
                 width: MediaQuery.of(context).size.width,
+                height: 200,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
